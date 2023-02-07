@@ -1,3 +1,4 @@
 import { HeadView } from "./HeadView";
+import { FacebookPosts } from "./FacebookPosts";
 
-export { HeadView };
+export { HeadView, FacebookPosts };

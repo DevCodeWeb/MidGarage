@@ -11,22 +11,13 @@ export const HeadView = () => {
   console.log(data[0].brand);
 
   return (
-    <section className="py-[150px]">
-      <div
-        className="col-span-12 text-center font-bold text-[48px] mb-[48px
-       ]"
-      >
+    <section className="pt-[20px]">
+      <div className="col-span-10 h-[400px] bg-brithness-50 col-start-2 bg-team text-center font-bold flex flex-col items-center justify-end pb-[48px] text-[48px] mb-[48px] bg-">
         <h1>Nos interventions</h1>
         <p className="text-[40px] font-normal">
           Retrouvez juste ici quelques-unes de nos interventions
         </p>
       </div>
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&width=500&show_text=true&height=274&appId"
-        width="500"
-        height="274"
-        className="border:none overflow:hidden rounded-2xl"
-      ></iframe>
     </section>
   );
 };

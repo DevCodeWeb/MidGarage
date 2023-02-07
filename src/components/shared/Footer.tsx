@@ -10,10 +10,6 @@ export const Footer = () => {
       <div className="flex items-center justify-between w-full max-w-[1440px]">
         <div className="">
           <img src="assets/logoMidGarage_White.png" alt="" />
-          <p>
-            Spécialiste dnas la réparation de poids lourds dans toute
-            l&apos;Europe
-          </p>
         </div>
         <div className="flex gap-[48px]">
           <div className="flex flex-col items-end">

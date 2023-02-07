@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         headView: "url('/assets/headView.png')",
+        team: "url('/assets/team.png')",
       },
     },
   },

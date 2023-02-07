@@ -25,13 +25,19 @@ export const Header = () => {
       title: "Partenaires",
       link: "partenaires",
     },
+    {
+      title: "Interventions",
+      link: "interventions",
+    },
   ];
 
   return (
     <header
       className={`flex fixed ${
-        scroll ? "top-0" : "top-[-70px]"
-      } items-center duration-200 justify-center w-screen bg-blue h-[70px] shadow-lg`}
+        scroll
+          ? "h-[70px]"
+          : "h-[50px] bg-opacity-50 hover:h-[70px] hover:bg-opacity-100 duration-200"
+      } items-center duration-200 top-0 justify-center w-screen bg-blue shadow-lg`}
     >
       <div className="flex items-center justify-between w-full max-w-[1440px]">
         <div className="">

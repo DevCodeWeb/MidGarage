@@ -6,7 +6,7 @@
 
 @layer base {
   section {
-    @apply max-w-[1440px] sm:px-[24px] md:px-[32px] mx-auto lg:px-[64px] xl:px-[128px] grid grid-cols-12 gap-[24px];
+    @apply max-w-[1440px] text-white sm:px-[24px] md:px-[32px] mx-auto lg:px-[64px] xl:px-[128px] grid grid-cols-12 gap-[24px];
   }
 }
 
