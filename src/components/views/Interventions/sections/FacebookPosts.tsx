@@ -1,8 +1,15 @@
+import { ButtonTrans } from "@/components/atoms/Button";
+
+import { Icon } from "@iconify/react";
+import externalLinkFill from "@iconify/icons-eva/external-link-fill";
 import { Posts } from "@/data/Posts";
 
 export const FacebookPosts = () => {
   return (
-    <section className="mb-[150px]">
+    <section className="mb-[50px]">
+      <h2 className="col-span-12 text-center text-[24px]">
+        Nous partageons la plus part de nos interventions sur Facebook
+      </h2>
       <div className="flex items-center justify-center flex-wrap col-span-12 gap-[24px] cursor-pointer">
         {Posts.map((elm: any, i: number) => {
           return (
@@ -19,6 +26,19 @@ export const FacebookPosts = () => {
             </a>
           );
         })}
+      </div>
+      <div className="flex justify-center col-span-12 mt-[24px]">
+        <a
+          href="https://www.facebook.com/midate/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ButtonTrans
+            label="Voir plus"
+            icon={externalLinkFill}
+            className="flex-row-reverse"
+          />
+        </a>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import Link from "next/link";
 /* eslint-disable @next/next/no-img-element */
 export const Footer = () => {
   return (
-    <footer className="flex flex-col gap-[48px] pt-[48px] pb-[24px] items-center justify-center w-screen bg-red">
+    <footer className="flex flex-col text-white gap-[48px] pt-[48px] pb-[24px] items-center justify-center w-screen bg-red">
       <div className="flex items-center justify-between w-full max-w-[1440px]">
         <div className="">
           <img src="assets/logoMidGarage_White.png" alt="" />
@@ -46,7 +46,8 @@ export const Footer = () => {
         </div>
       </div>
       <p className="font-light text-[12px]">
-        © copyright - MidGarage 2023 - site développé par <b>DevCode</b>
+        © copyright - MidGarage 2023 - site développé par{" "}
+        <b className="font-semibold cursor-pointer hover:underline">DevCode</b>
       </p>
     </footer>
   );

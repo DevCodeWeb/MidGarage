@@ -18,16 +18,12 @@ export const Header = () => {
       link: "/",
     },
     {
-      title: "Contact",
-      link: "Contact",
-    },
-    {
-      title: "Partenaires",
-      link: "partenaires",
-    },
-    {
       title: "Interventions",
       link: "interventions",
+    },
+    {
+      title: "Garage",
+      link: "garage",
     },
   ];
 
@@ -37,7 +33,7 @@ export const Header = () => {
         scroll
           ? "h-[70px]"
           : "h-[50px] bg-opacity-50 hover:h-[70px] hover:bg-opacity-100 duration-200"
-      } items-center duration-200 top-0 justify-center w-screen bg-blue shadow-lg`}
+      } items-center duration-200 text-white top-0 justify-center w-screen bg-blue shadow-lg`}
     >
       <div className="flex items-center justify-between w-full max-w-[1440px]">
         <div className="">
@@ -53,7 +49,6 @@ export const Header = () => {
               </div>
             );
           })}
-          <Button label="Contacter" />
         </div>
       </div>
     </header>

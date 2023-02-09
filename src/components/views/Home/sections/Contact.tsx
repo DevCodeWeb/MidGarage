@@ -10,7 +10,7 @@ export const Contact = () => {
 
   return (
     <section>
-      <img src="assets/contact.png" alt="" className="col-span-6" />
+      <img src="assets/contact.png" alt="" className="col-span-5" />
       <div className="flex flex-col items-center justify-center col-span-6">
         <h2 className="font-bold text-[40px]">Nous contacter</h2>
         <p className="mb-[48px]">
@@ -22,9 +22,9 @@ export const Contact = () => {
             Informations sur votre camion
           </h3>
           <div className="flex gap-[24px]">
-            <Select data={data} label="Marque" placeholder="Man" />
-            <Select data={data} label="Model" placeholder="Man" />
-            <Select data={data} label="Année" placeholder="Man" />
+            <Input label="Marque" placeholder="Man" />
+            <Input label="Model" placeholder="Man" />
+            <Input label="Année" placeholder="Man" />
           </div>
         </div>
         <div className="w-full mb-[38px]">

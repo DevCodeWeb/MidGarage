@@ -7,7 +7,7 @@ export const HeadView = () => {
       <div className="col-span-12 bg-cover pt-[620px] bg-headView pb-[50px] flex flex-col items-center">
         <h1 className="text-[54px] font-bold">MidGarage</h1>
         <div className="flex items-center justify-between w-[90%]">
-          <ButtonTrans label="Nos partenaires" />
+          <ButtonTrans label="Notre garage" />
           <p className="text-[24px]">
             Garage spécialisé dans la réparation de poids lourds dans toute
             l’Europe

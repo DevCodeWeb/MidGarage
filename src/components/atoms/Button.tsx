@@ -6,9 +6,10 @@ type ButtonType = {
   key?: any;
   icon?: any;
   disabled?: boolean;
+  className?: string;
 };
 
-export const Button = ({ label, onClick, icon }: ButtonType) => {
+export const Button = ({ label, icon }: ButtonType) => {
   return (
     <button className="px-[18px] flex items-center justify-center gap-[12px] w-full sm:w-full md:w-full py-[8px] hover:bg-white hover:text-red font-semibold duration-150 bg-red rounded-[4px]">
       {icon && <Icon icon={icon} />}
@@ -17,9 +18,11 @@ export const Button = ({ label, onClick, icon }: ButtonType) => {
   );
 };
 
-export const ButtonTrans = ({ label, icon }: ButtonType) => {
+export const ButtonTrans = ({ label, icon, className }: ButtonType) => {
   return (
-    <button className="px-[18px] flex items-center justify-center gap-[12px] sm:w-full md:w-full py-[8px] text-[18px] hover:bg-white hover:bg-opacity-30 font-semibold duration-150  rounded-[4px]">
+    <button
+      className={` ${className} px-[18px] flex items-center justify-center gap-[12px] sm:w-full md:w-full py-[8px] text-[18px] hover:bg-white hover:bg-opacity-30 font-semibold duration-150  rounded-[4px]`}
+    >
       {icon && <Icon icon={icon} />}
       <h1>{label}</h1>
     </button>
