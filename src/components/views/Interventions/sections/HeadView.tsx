@@ -11,9 +11,6 @@ export const HeadView = () => {
       <img src="assets/team.png" alt="" className="col-span-12" />
       <div className="col-span-10 xs:col-span-12 sm:col-span-12 xs:h-[220px] sm:-[220px] col-start-2 text-center font-bold flex flex-col items-center justify-end pb-[48px] xs:pb-[24px] sm:pb-[24px] text-[48px] mb-[48px] xs:text-[28px] sm:text-[28px]">
         <h1>Nos interventions</h1>
-        <p className="text-[40px]  xs:text-[20px] sm:text-[20px] font-normal">
-          Retrouvez juste ici quelques-unes de nos interventions
-        </p>
       </div>
     </section>
   );
