@@ -7,11 +7,11 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <footer className="flex flex-col text-white gap-[48px] pt-[48px] pb-[24px] items-center justify-center w-screen bg-red">
-      <div className="flex items-center justify-between w-full max-w-[1440px]">
-        <div className="">
+      <div className="flex xs:flex-col sm:flex-col items-center justify-between w-full max-w-[1440px]">
+        <div className="mb-0 xs:mb-[32px] sm:mn-[32px]">
           <img src="assets/logoMidGarage_White.png" alt="" />
         </div>
-        <div className="flex gap-[48px]">
+        <div className="flex gap-[48px] xs:flex-col sm:flex-col">
           <div className="flex flex-col items-end">
             <h2 className="font-semibold text-[18px] mb-[12px]">
               Interventions

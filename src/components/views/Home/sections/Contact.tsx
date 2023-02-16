@@ -1,64 +1,62 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button } from "@/components/atoms/Button";
-import { Input, Select, TextArea } from "@/components/atoms/Inputs";
-import { trucks } from "@/data/Trucks";
+import { Button, LargeButton } from "@/components/atoms/Button";
 import sendRounded from "@iconify/icons-material-symbols/send-rounded";
 import phoneFill from "@iconify/icons-eva/phone-fill";
+import roundMailOutline from "@iconify/icons-ic/round-mail-outline";
+import fileDocumentOutline from "@iconify/icons-mdi/file-document-outline";
 
 export const Contact = () => {
-  const data = trucks;
+  const contactWay = [
+    {
+      title: "Envoyer un message",
+      subtitle: "Formulaire de contact",
+      icon: sendRounded,
+      link: "/contact",
+    },
+    {
+      title: "Demander un devis",
+      subtitle: "Formulaire de contact",
+      icon: fileDocumentOutline,
+      link: "/contact",
+    },
+    {
+      title: "Appeler",
+      subtitle: "09 87 56 93 27",
+      icon: phoneFill,
+      link: "tel:0987569327",
+    },
+    {
+      title: "Mail",
+      subtitle: "contact@midgarage.eu",
+      icon: roundMailOutline,
+      link: "mailto:contact@midgarage.eu",
+    },
+  ];
 
   return (
-    <section>
-      <img src="assets/contact.png" alt="" className="col-span-5" />
-      <div className="flex flex-col items-center justify-center col-span-6">
+    <section className="mb-[24px]">
+      <img
+        src="assets/contact.png"
+        alt=""
+        className="col-span-5 xs:hidden sm:hidden"
+      />
+      <div className="flex flex-col items-center justify-center col-span-6 xs:col-span-12 sm:col-span-12">
         <h2 className="font-bold text-[40px]">Nous contacter</h2>
         <p className="mb-[48px]">
-          Veuillez bien remplir tous les champs pour que nous puissions traiter
-          au mieux votre demande
+          Veuillez choisir le moyen de contact qui vous convient
         </p>
-        <div className="w-full mb-[38px]">
-          <h3 className="text-[20px] mb-[18px]">
-            Informations sur votre camion
-          </h3>
-          <div className="flex gap-[24px]">
-            <Input label="Marque" placeholder="Man" />
-            <Input label="Model" placeholder="Man" />
-            <Input label="Année" placeholder="Man" />
-          </div>
-        </div>
-        <div className="w-full mb-[38px]">
-          <h3 className="text-[20px] mb-[18px]">Informations sur vous</h3>
-          <div className="flex gap-[24px]">
-            <Input name="FirstName" label="Nom" placeholder="Man" required />
-            <Input name="FirstName" label="Prénom" placeholder="Man" required />
-          </div>
-          <div className="flex gap-[24px] mt-[24px]">
-            <Input
-              name="FirstName"
-              label="Adresse mail"
-              placeholder="Man"
-              required
-            />
-            <Input
-              name="FirstName"
-              label="Numéro de téléphone"
-              placeholder="Man"
-              required
-            />
-          </div>
-        </div>
-        <div className="w-full mb-[38px]">
-          <h3 className="text-[20px] mb-[12px]">Nom de votre entreprise</h3>
-          <Input name="FirstName" placeholder="Man" />
-        </div>
-        <div className="w-full mb-[38px]">
-          <h3 className="text-[20px] mb-[12px]">Votre message</h3>
-          <TextArea placeholder="Mon alternateur m’a laché sur la A5. A l’aide !" />
-        </div>
-        <div className=" flex gap-[24px] w-full">
-          <Button label="09 87 56 93 27" icon={phoneFill} />
-          <Button label="Envoyer" icon={sendRounded} />
+        <div className=" flex flex-col gap-[24px] w-full">
+          {contactWay.map((elm: any, i: number) => {
+            return (
+              <a href={elm.link} key={i}>
+                <LargeButton
+                  title={elm.title}
+                  subtitle={elm.subtitle}
+                  icon={elm.icon}
+                />
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

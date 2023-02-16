@@ -3,11 +3,12 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      sm: { min: "300px", max: "428px" },
-      md: { min: "429px", max: "799px" },
-      lg: { min: "800px", max: "1279px" },
-      xl: { min: "1280px", max: "1439px" },
-      xxl: "1440px",
+      xs: { max: "428px" },
+      sm: { min: "429px", max: "799px" },
+      md: { min: "800px", max: "1279px" },
+      lg: { min: "1280px", max: "1919px" },
+      xl: { min: "1920px", max: "2560px" },
+      xxl: "2561px",
     },
     colors: {
       black: "#292929",
