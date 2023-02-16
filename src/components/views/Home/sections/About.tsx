@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <section className="my-[220px]">
       <div className="col-span-6 text-[22px] flex flex-col justify-center xs:col-span-12 sm:col-span-12">
-        <h2 className="col-span-12 font-bold text-[40px] mb-[24px] xs:text-center sm:text-center">
+        <h2 className="col-span-12 font-bold text-[40px] xs:text-[24px] sm:text-[24px] mb-[24px] xs:text-center sm:text-center">
           Qui sommes-nous ?
         </h2>
         <img

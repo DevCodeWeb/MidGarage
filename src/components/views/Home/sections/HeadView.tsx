@@ -5,7 +5,7 @@ import Link from "next/link";
 export const HeadView = () => {
   return (
     <section className="px-[16px]">
-      <div className="col-span-12 bg-cover pt-[620px] bg-headView pb-[24px] flex flex-col items-center">
+      <div className="col-span-12 bg-cover pt-[620px] xs:pt-[220px] sm:pt-[220px] bg-headView pb-[24px] flex flex-col items-center">
         <h1 className="text-[54px] font-bold">MidGarage</h1>
         <div className="flex items-center justify-between">
           <p className="text-[24px] text-center">

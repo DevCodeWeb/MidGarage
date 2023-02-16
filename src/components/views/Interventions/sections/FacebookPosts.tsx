@@ -7,7 +7,7 @@ export const FacebookPosts = () => {
   return (
     <section className="mb-[50px]">
       <h2 className="col-span-12 text-center text-[24px] xs:text-[18px] sm:text-[18px]">
-        Nous partageons la plus part de nos interventions sur Facebook
+        Nous partageons la plupart de nos interventions sur Facebook
       </h2>
       <div className="flex items-center justify-center flex-wrap col-span-12 gap-[24px] cursor-pointer">
         {Posts.map((elm: any, i: number) => {
