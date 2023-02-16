@@ -14,7 +14,7 @@ export const HeadView = () => {
           </p>
         </div>
       </div>
-      <div className="col-span-6 xs:col-span-12 col-start-4 flex gap-[24px] mt-[12px] xs:flex-col sm:flex-col">
+      <div className="col-span-6 xs:col-span-12 col-start-4 flex gap-[24px] justify-center mt-[12px] xs:flex-col sm:flex-col">
         <Link href="/contact">
           <Button label="Devis gratuit" />
         </Link>
