@@ -13,11 +13,11 @@ export const HeadView = () => {
     <section className="pb-[150px]">
       <img src="assets/garage.png" alt="" className="col-span-12" />
       <div className="flex flex-col col-span-12">
-        <h2 className="text-[24px]">Votre garage poids lourds - Nesle</h2>
         <div className="flex items-center gap-[12px]">
           <Icon icon={garageIcon} className="w-[48px] h-[48px]" />
           <h1 className="text-[48px] font-bold">MidGarage</h1>
         </div>
+        <h2 className="text-[24px]">Votre garage poids lourds - Nesle</h2>
       </div>
       <div className="h-full col-span-7 xs:col-span-12 sm:col-span-12">
         <p className="mb-[24px] text-[18px]">
